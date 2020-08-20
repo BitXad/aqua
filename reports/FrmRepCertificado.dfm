@@ -1,6 +1,6 @@
 object FormRepCertificado: TFormRepCertificado
-  Left = 424
-  Top = 63
+  Left = 858
+  Top = 74
   Width = 939
   Height = 780
   Caption = 'Certificado de aportaci'#243'n'
@@ -77,6 +77,41 @@ object FormRepCertificado: TFormRepCertificado
         1637.77083333333
         2058.45833333333)
       BandType = rbTitle
+      object QRLabel9: TQRLabel
+        Left = 2
+        Top = 283
+        Width = 953
+        Height = 17
+        Frame.Color = clBlack
+        Frame.DrawTop = False
+        Frame.DrawBottom = False
+        Frame.DrawLeft = False
+        Frame.DrawRight = False
+        Size.Values = (
+          44.9791666666667
+          5.29166666666667
+          748.770833333333
+          2521.47916666667)
+        Alignment = taLeftJustify
+        AlignToBand = False
+        AutoSize = True
+        AutoStretch = False
+        Caption = 
+          'A favor del (la) Asociado(a):...................................' +
+          '................................................................' +
+          '................................................................' +
+          '............................. con'
+        Color = clWhite
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        Transparent = True
+        WordWrap = True
+        FontSize = 10
+      end
       object DBLogo: TQRDBImage
         Left = 2
         Top = 6
@@ -348,7 +383,7 @@ object FormRepCertificado: TFormRepCertificado
         AlignToBand = False
         AutoSize = False
         AutoStretch = False
-        Caption = 'CERTIFICADO DE APORTACION'
+        Caption = 'CERTIFICADO DE APORTACI'#211'N'
         Color = clWhite
         Font.Charset = ANSI_CHARSET
         Font.Color = clWindowText
@@ -360,45 +395,10 @@ object FormRepCertificado: TFormRepCertificado
         WordWrap = True
         FontSize = 20
       end
-      object QRLabel9: TQRLabel
-        Left = 13
-        Top = 283
-        Width = 953
-        Height = 17
-        Frame.Color = clBlack
-        Frame.DrawTop = False
-        Frame.DrawBottom = False
-        Frame.DrawLeft = False
-        Frame.DrawRight = False
-        Size.Values = (
-          44.9791666666667
-          34.3958333333333
-          748.770833333333
-          2521.47916666667)
-        Alignment = taLeftJustify
-        AlignToBand = False
-        AutoSize = True
-        AutoStretch = False
-        Caption = 
-          'A favor del (la) Asociado(a):...................................' +
-          '................................................................' +
-          '................................................................' +
-          '............................. con'
-        Color = clWhite
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Arial'
-        Font.Style = []
-        ParentFont = False
-        Transparent = True
-        WordWrap = True
-        FontSize = 10
-      end
       object QRLabel3: TQRLabel
-        Left = 13
+        Left = 2
         Top = 300
-        Width = 950
+        Width = 830
         Height = 17
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -407,9 +407,9 @@ object FormRepCertificado: TFormRepCertificado
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          34.3958333333333
+          5.29166666666667
           793.75
-          2513.54166666667)
+          2196.04166666667)
         Alignment = taLeftJustify
         AlignToBand = False
         AutoSize = True
@@ -417,8 +417,7 @@ object FormRepCertificado: TFormRepCertificado
         Caption = 
           'Carnet de Identidad N'#186' .........................................' +
           '................................................................' +
-          '...........expedido en .........................................' +
-          '.............; conforme'
+          '...........expedido en ........................; conforme'
         Color = clWhite
         Font.Charset = ANSI_CHARSET
         Font.Color = clWindowText
@@ -431,7 +430,7 @@ object FormRepCertificado: TFormRepCertificado
         FontSize = 10
       end
       object QRLabel11: TQRLabel
-        Left = 13
+        Left = 2
         Top = 318
         Width = 947
         Height = 17
@@ -442,7 +441,7 @@ object FormRepCertificado: TFormRepCertificado
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          34.3958333333333
+          5.29166666666667
           841.375
           2505.60416666667)
         Alignment = taLeftJustify
@@ -450,7 +449,7 @@ object FormRepCertificado: TFormRepCertificado
         AutoSize = True
         AutoStretch = False
         Caption = 
-          'Resolucion Administrativa N'#186' ...................................' +
+          'Resoluci'#243'n Administrativa N'#186' ...................................' +
           '........................................... con el C'#243'digo de Reg' +
           'istro N'#186'. ......................................................' +
           '.................'
@@ -466,7 +465,7 @@ object FormRepCertificado: TFormRepCertificado
         FontSize = 10
       end
       object QRLabel12: TQRLabel
-        Left = 13
+        Left = 2
         Top = 337
         Width = 945
         Height = 17
@@ -477,7 +476,7 @@ object FormRepCertificado: TFormRepCertificado
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          34.3958333333333
+          5.29166666666667
           891.645833333333
           2500.3125)
         Alignment = taLeftJustify
@@ -501,7 +500,7 @@ object FormRepCertificado: TFormRepCertificado
         FontSize = 10
       end
       object QRLabel13: TQRLabel
-        Left = 13
+        Left = 2
         Top = 357
         Width = 902
         Height = 17
@@ -512,7 +511,7 @@ object FormRepCertificado: TFormRepCertificado
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          34.3958333333333
+          5.29166666666667
           944.5625
           2386.54166666667)
         Alignment = taLeftJustify
@@ -535,7 +534,7 @@ object FormRepCertificado: TFormRepCertificado
         FontSize = 10
       end
       object QRLabel14: TQRLabel
-        Left = 13
+        Left = 2
         Top = 376
         Width = 520
         Height = 17
@@ -546,7 +545,7 @@ object FormRepCertificado: TFormRepCertificado
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          34.3958333333333
+          5.29166666666667
           994.833333333333
           1375.83333333333)
         Alignment = taLeftJustify
@@ -568,7 +567,7 @@ object FormRepCertificado: TFormRepCertificado
         FontSize = 10
       end
       object QRLabel16: TQRLabel
-        Left = 538
+        Left = 554
         Top = 416
         Width = 214
         Height = 17
@@ -579,7 +578,7 @@ object FormRepCertificado: TFormRepCertificado
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          1423.45833333333
+          1465.79166666667
           1100.66666666667
           566.208333333333)
         Alignment = taRightJustify
@@ -625,6 +624,110 @@ object FormRepCertificado: TFormRepCertificado
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
+        Transparent = True
+        WordWrap = True
+        FontSize = 8
+      end
+      object QRDBText1: TQRDBText
+        Left = 208
+        Top = 280
+        Width = 73
+        Height = 15
+        Frame.Color = clBlack
+        Frame.DrawTop = False
+        Frame.DrawBottom = False
+        Frame.DrawLeft = False
+        Frame.DrawRight = False
+        Size.Values = (
+          39.6875
+          550.333333333333
+          740.833333333333
+          193.145833333333)
+        Alignment = taLeftJustify
+        AlignToBand = False
+        AutoSize = True
+        AutoStretch = False
+        Color = clWhite
+        DataSet = FormAsociados.ADOPrime
+        DataField = 'nombres_asoc'
+        Transparent = True
+        WordWrap = True
+        FontSize = 8
+      end
+      object QRDBText2: TQRDBText
+        Left = 408
+        Top = 280
+        Width = 73
+        Height = 15
+        Frame.Color = clBlack
+        Frame.DrawTop = False
+        Frame.DrawBottom = False
+        Frame.DrawLeft = False
+        Frame.DrawRight = False
+        Size.Values = (
+          39.6875
+          1079.5
+          740.833333333333
+          193.145833333333)
+        Alignment = taLeftJustify
+        AlignToBand = False
+        AutoSize = True
+        AutoStretch = False
+        Color = clWhite
+        DataSet = FormAsociados.ADOPrime
+        DataField = 'apellidos_asoc'
+        Transparent = True
+        WordWrap = True
+        FontSize = 8
+      end
+      object QRDBText3: TQRDBText
+        Left = 208
+        Top = 297
+        Width = 39
+        Height = 15
+        Frame.Color = clBlack
+        Frame.DrawTop = False
+        Frame.DrawBottom = False
+        Frame.DrawLeft = False
+        Frame.DrawRight = False
+        Size.Values = (
+          39.6875
+          550.333333333333
+          785.8125
+          103.1875)
+        Alignment = taLeftJustify
+        AlignToBand = False
+        AutoSize = True
+        AutoStretch = False
+        Color = clWhite
+        DataSet = FormAsociados.ADOPrime
+        DataField = 'ci_asoc'
+        Transparent = True
+        WordWrap = True
+        FontSize = 8
+      end
+      object QRDBText4: TQRDBText
+        Left = 692
+        Top = 297
+        Width = 33
+        Height = 15
+        Frame.Color = clBlack
+        Frame.DrawTop = False
+        Frame.DrawBottom = False
+        Frame.DrawLeft = False
+        Frame.DrawRight = False
+        Size.Values = (
+          39.6875
+          1830.91666666667
+          785.8125
+          87.3125)
+        Alignment = taLeftJustify
+        AlignToBand = False
+        AutoSize = True
+        AutoStretch = False
+        Color = clWhite
+        DataSet = FormAsociados.ADOPrime
+        DataField = 'ciudad'
         Transparent = True
         WordWrap = True
         FontSize = 8

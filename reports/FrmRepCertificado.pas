@@ -32,6 +32,10 @@ type
     QRLabel14: TQRLabel;
     QRLabel16: TQRLabel;
     QRLabel6: TQRLabel;
+    QRDBText1: TQRDBText;
+    QRDBText2: TQRDBText;
+    QRDBText3: TQRDBText;
+    QRDBText4: TQRDBText;
     procedure Consultar(SQL:String);
     procedure Iniciar(mes,gestion:String);
     procedure ConsultaPorFecha(fecha1,fecha2:Tdate);
@@ -50,7 +54,7 @@ var
 
 implementation
 
-uses frmLogin, frmEmpresa, FrmBuscarFecha, FrmUsuario;
+uses frmLogin, frmEmpresa, FrmBuscarFecha, FrmUsuario, frmAsociados;
 
 
 {$R *.dfm}

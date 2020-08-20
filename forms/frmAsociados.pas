@@ -183,6 +183,8 @@ type
     procedure Lectura1KeyPress(Sender: TObject; var Key: Char);
     procedure BCancelar2Click(Sender: TObject);
     procedure SpeedButton6Click(Sender: TObject);
+    procedure certificadoClick(Sender: TObject);
+    procedure SpeedButton7Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -198,7 +200,7 @@ var
 implementation
 
 uses frmLogin, webC, FrmRepAsociado, FrmZonas, FrmServicios, FrmCategorias,
-  frmLecturas, FrmRepKardex2;
+  frmLecturas, FrmRepKardex2, FrmRepCertificado;
 
 {$R *.dfm}
 
@@ -801,6 +803,16 @@ end;
 procedure TFormAsociados.SpeedButton6Click(Sender: TObject);
 begin
     FormRepKardex2.ConsultaPorAsociado2(ADOPrime.fieldbyname('id_asoc').ASString);
+end;
+
+procedure TFormAsociados.certificadoClick(Sender: TObject);
+begin
+        FormRepCertificado.QuickRep1.Preview;
+end;
+
+procedure TFormAsociados.SpeedButton7Click(Sender: TObject);
+begin
+        FormRepCertificado.QuickRep1.Preview;
 end;
 
 end.

@@ -145,6 +145,8 @@ begin
   FormSplash.pb.progress:=120;
   Application.CreateForm(TFormRegistrarLectura, FormRegistrarLectura);
   Application.CreateForm(TFormServicios, FormServicios);
+  Application.CreateForm(TFormRepCertificado, FormRepCertificado);
+
 
   FormSplash.pb.progress:=130;
   

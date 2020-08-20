@@ -1,6 +1,6 @@
 object FormAportes: TFormAportes
-  Left = 281
-  Top = 198
+  Left = 801
+  Top = 196
   Width = 1378
   Height = 750
   Caption = 'Aportes'
@@ -19,7 +19,7 @@ object FormAportes: TFormAportes
   object PanelTitulo: TPanel
     Left = 0
     Top = 0
-    Width = 1362
+    Width = 1370
     Height = 27
     Align = alTop
     Alignment = taLeftJustify
@@ -45,7 +45,7 @@ object FormAportes: TFormAportes
   object PanelOperaciones: TPanel
     Left = 0
     Top = 27
-    Width = 1362
+    Width = 1370
     Height = 74
     Align = alTop
     Alignment = taLeftJustify
@@ -4043,7 +4043,7 @@ object FormAportes: TFormAportes
   object PanelGeneral: TPanel
     Left = 0
     Top = 101
-    Width = 1362
+    Width = 1370
     Height = 189
     Align = alTop
     Alignment = taLeftJustify
@@ -5245,7 +5245,7 @@ object FormAportes: TFormAportes
       end
     end
     object Panel1: TPanel
-      Left = 1138
+      Left = 1146
       Top = 0
       Width = 222
       Height = 187
@@ -8807,8 +8807,8 @@ object FormAportes: TFormAportes
   object DBGPrime: TDBGrid
     Left = 0
     Top = 290
-    Width = 1362
-    Height = 382
+    Width = 1370
+    Height = 390
     Align = alClient
     Color = clGrayText
     DataSource = DataPrime
@@ -8961,11 +8961,6 @@ object FormAportes: TFormAportes
         Color = clWhite
         Expanded = False
         FieldName = 'id_ap'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Arial'
-        Font.Style = []
         Title.Alignment = taCenter
         Title.Caption = 'Identific.'
         Title.Font.Charset = ANSI_CHARSET
@@ -8980,11 +8975,6 @@ object FormAportes: TFormAportes
         Color = clWhite
         Expanded = False
         FieldName = 'exento_ap'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Arial'
-        Font.Style = []
         Title.Alignment = taCenter
         Title.Caption = 'Exento'
         Title.Font.Charset = ANSI_CHARSET
@@ -8999,11 +8989,6 @@ object FormAportes: TFormAportes
         Color = clWhite
         Expanded = False
         FieldName = 'ice_ap'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Arial'
-        Font.Style = []
         Title.Alignment = taCenter
         Title.Caption = 'ICE'
         Title.Font.Charset = ANSI_CHARSET
@@ -9017,8 +9002,8 @@ object FormAportes: TFormAportes
   end
   object BarraEstado: TStatusBar
     Left = 0
-    Top = 672
-    Width = 1362
+    Top = 680
+    Width = 1370
     Height = 19
     Color = cl3DLight
     Panels = <
