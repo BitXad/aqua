@@ -398,7 +398,7 @@ object FormRepCertificado: TFormRepCertificado
       object QRLabel3: TQRLabel
         Left = 2
         Top = 300
-        Width = 830
+        Width = 774
         Height = 17
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -409,15 +409,15 @@ object FormRepCertificado: TFormRepCertificado
           44.9791666666667
           5.29166666666667
           793.75
-          2196.04166666667)
+          2047.875)
         Alignment = taLeftJustify
         AlignToBand = False
         AutoSize = True
         AutoStretch = False
         Caption = 
           'Carnet de Identidad N'#186' .........................................' +
-          '................................................................' +
-          '...........expedido en ........................; conforme'
+          '.............................................expedido en .......' +
+          '.................................; conforme'
         Color = clWhite
         Font.Charset = ANSI_CHARSET
         Font.Color = clWindowText
@@ -502,7 +502,7 @@ object FormRepCertificado: TFormRepCertificado
       object QRLabel13: TQRLabel
         Left = 2
         Top = 357
-        Width = 902
+        Width = 778
         Height = 17
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -513,7 +513,7 @@ object FormRepCertificado: TFormRepCertificado
           44.9791666666667
           5.29166666666667
           944.5625
-          2386.54166666667)
+          2058.45833333333)
         Alignment = taLeftJustify
         AlignToBand = False
         AutoSize = True
@@ -521,7 +521,7 @@ object FormRepCertificado: TFormRepCertificado
         Caption = 
           'que se encuentra totalmente cancelado, en cumplimiento a los dis' +
           'puesto por el Estatuto Org'#225'nico y el Reglamento de la Cooperativ' +
-          'a, ley 356, Ley General '
+          'a, '
         Color = clWhite
         Font.Charset = ANSI_CHARSET
         Font.Color = clWindowText
@@ -536,7 +536,7 @@ object FormRepCertificado: TFormRepCertificado
       object QRLabel14: TQRLabel
         Left = 2
         Top = 376
-        Width = 520
+        Width = 644
         Height = 17
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -547,14 +547,14 @@ object FormRepCertificado: TFormRepCertificado
           44.9791666666667
           5.29166666666667
           994.833333333333
-          1375.83333333333)
+          1703.91666666667)
         Alignment = taLeftJustify
         AlignToBand = False
         AutoSize = True
         AutoStretch = False
         Caption = 
-          'de Cooperativas y su Decreto Supremo 1995, en cumplimiento de  l' +
-          'os requisitos vigentes.'
+          'ley 356, Ley General de Cooperativas y su Decreto Supremo 1995, ' +
+          'en cumplimiento de  los requisitos vigentes.'
         Color = clWhite
         Font.Charset = ANSI_CHARSET
         Font.Color = clWindowText
@@ -567,8 +567,8 @@ object FormRepCertificado: TFormRepCertificado
         FontSize = 10
       end
       object QRLabel16: TQRLabel
-        Left = 554
-        Top = 416
+        Left = 562
+        Top = 400
         Width = 214
         Height = 17
         Frame.Color = clBlack
@@ -578,8 +578,8 @@ object FormRepCertificado: TFormRepCertificado
         Frame.DrawRight = False
         Size.Values = (
           44.9791666666667
-          1465.79166666667
-          1100.66666666667
+          1486.95833333333
+          1058.33333333333
           566.208333333333)
         Alignment = taRightJustify
         AlignToBand = False
@@ -707,7 +707,7 @@ object FormRepCertificado: TFormRepCertificado
         FontSize = 8
       end
       object QRDBText4: TQRDBText
-        Left = 692
+        Left = 561
         Top = 297
         Width = 33
         Height = 15
@@ -718,7 +718,7 @@ object FormRepCertificado: TFormRepCertificado
         Frame.DrawRight = False
         Size.Values = (
           39.6875
-          1830.91666666667
+          1484.3125
           785.8125
           87.3125)
         Alignment = taLeftJustify
