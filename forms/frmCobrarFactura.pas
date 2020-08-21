@@ -1108,12 +1108,12 @@ try
 
             //Mostrar la grilla de Detalle de factura
             SQL:='select * from detalle_factura where id_fact='+ ADOFacturas.fieldbyname('id_fact').AsString;
-            Edit1.Text:= Edit1.Text +' Mostrar la grilla de Detalle de factura: '+ SQL;
+            //Edit1.Text:= Edit1.Text +' Mostrar la grilla de Detalle de factura: '+ SQL;
             ConsultarDetalle(SQL);
 
             //Mostrar la suma de consumo
             SQL:='select sum(cant_detfact*punit_detfact) as consumo from detalle_factura where tipo_detfact=0 and id_fact='+ ADOFacturas.fieldbyname('id_fact').AsString;
-            Edit1.Text:= Edit1.Text +'  Mostrar la suma de consumo: '+ SQL;
+            //Edit1.Text:= Edit1.Text +'  Mostrar la suma de consumo: '+ SQL;
             ConsultarSumaConsumo(SQL);
 
 
@@ -1133,7 +1133,7 @@ try
 
             SQL:='select p.id_param,p.descip_param,p.dias_param,p.monto_param,p.estado,p.detalle_param,  (DATEDIFF(date(now()), t.fecha_lec)) as moradias '+
                  'from parametros p,(select * from lectura where id_lec='+idlec+') as t '+
-                 'where p.estado='+quotedStr('XXXXXXX');
+                 'where p.estado='+quotedStr('ACTIVO');
             Edit1.Text:= Edit1.Text +' CONSULTA PARA OBTENER RECARGOS POR MORA: '+ SQL;
             end;
             ConsultarRecargos(SQL);

@@ -19,7 +19,7 @@ object FormAsociados: TFormAsociados
   object PanelTitulo: TPanel
     Left = 0
     Top = 0
-    Width = 1147
+    Width = 1139
     Height = 27
     Align = alTop
     Alignment = taLeftJustify
@@ -45,7 +45,7 @@ object FormAsociados: TFormAsociados
   object PanelOperaciones: TPanel
     Left = 0
     Top = 27
-    Width = 1147
+    Width = 1139
     Height = 74
     Align = alTop
     Alignment = taLeftJustify
@@ -3827,7 +3827,7 @@ object FormAsociados: TFormAsociados
   object PanelGeneral: TPanel
     Left = 0
     Top = 101
-    Width = 1147
+    Width = 1139
     Height = 189
     Align = alTop
     Alignment = taLeftJustify
@@ -5293,7 +5293,7 @@ object FormAsociados: TFormAsociados
       end
     end
     object Panel1: TPanel
-      Left = 923
+      Left = 915
       Top = 0
       Width = 222
       Height = 187
@@ -8874,8 +8874,8 @@ object FormAsociados: TFormAsociados
   object DBGPrime: TDBGrid
     Left = 0
     Top = 290
-    Width = 1147
-    Height = 366
+    Width = 1139
+    Height = 358
     Align = alClient
     Color = clGrayText
     DataSource = DataPrime
@@ -9168,8 +9168,8 @@ object FormAsociados: TFormAsociados
   end
   object BarraEstado: TStatusBar
     Left = 0
-    Top = 656
-    Width = 1147
+    Top = 648
+    Width = 1139
     Height = 19
     Color = cl3DLight
     Panels = <

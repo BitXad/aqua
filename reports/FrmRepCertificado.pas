@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, ExtCtrls, QuickRpt, DB, ADODB, QRCtrls, EDBImage, DBCtrls, qrprntr,
-  StdCtrls;
+  StdCtrls, jpeg;
 
 type
   TFormRepCertificado = class(TForm)
@@ -30,18 +30,27 @@ type
     QRLabel12: TQRLabel;
     QRLabel13: TQRLabel;
     QRLabel14: TQRLabel;
-    QRLabel16: TQRLabel;
     QRLabel6: TQRLabel;
     QRDBText1: TQRDBText;
     QRDBText2: TQRDBText;
     QRDBText3: TQRDBText;
     QRDBText4: TQRDBText;
+    Image1: TQRImage;
+    QRLabel1: TQRLabel;
+    QRLabel4: TQRLabel;
+    QRLabel17: TQRLabel;
+    QRExpr1: TQRExpr;
+    QRExpr2: TQRExpr;
+    QRExpr3: TQRExpr;
+    QRExpr5: TQRExpr;
+    QRExpr4: TQRExpr;
     procedure Consultar(SQL:String);
     procedure Iniciar(mes,gestion:String);
     procedure ConsultaPorFecha(fecha1,fecha2:Tdate);
     procedure ConsultaPorDia(fecha1,fecha2:Tdate);
     procedure VistaPrevia();
     procedure Imprimir();
+    procedure mostrar();
     procedure ConsultaPorAsociado(fecha1,fecha2:Tdate; id_asoc:String);
   private
     { Private declarations }
@@ -54,7 +63,8 @@ var
 
 implementation
 
-uses frmLogin, frmEmpresa, FrmBuscarFecha, FrmUsuario, frmAsociados;
+uses frmLogin, frmEmpresa, FrmBuscarFecha, FrmUsuario, frmAsociados,
+  GeneradorQR;
 
 
 {$R *.dfm}
@@ -87,8 +97,7 @@ begin
 end;
 
 procedure TFormRepCertificado.ConsultaPorAsociado(fecha1,fecha2:Tdate; id_asoc:String);
-var
-    SQL,orden,usuario:String;
+
 begin
    {
     QRFecha1.Caption:=DatetoStr(fecha1);
@@ -114,8 +123,6 @@ begin
 end;
 
 procedure TFormRepCertificado.ConsultaPorFecha(fecha1,fecha2:Tdate);
-var
-    SQL,orden,usuario:String;
 begin
   {
 
@@ -144,8 +151,6 @@ end;
 
 
 procedure TFormRepCertificado.ConsultaPorDia(fecha1,fecha2:Tdate);
-var
-    SQL,orden,usuario:String;
 begin
 //No incluye ordenamiento ni parametros
 {    QRFecha1.Caption:=DatetoStr(fecha1);
@@ -170,6 +175,22 @@ begin
     Consultar(SQL);
 
     QuickRep1.Preview;
+end;
+
+procedure TFormRepCertificado.Mostrar();
+begin
+
+    FormGeneradorQR.edtText.Text := FormAsociados.ADOPrime.fieldbyname('codigo_asoc').Value+' '+
+                                    FormAsociados.ADOPrime.fieldbyname('nombres_asoc').Value+' '+
+                                    FormAsociados.ADOPrime.fieldbyname('apellidos_asoc').Value;
+
+    FormGeneradorQR.BGenerar.Click;
+
+    Image1.Picture.Bitmap := FormgeneradorQR.QRCodeBitmap;
+    Image1.Repaint;
+
+    quickrep1.Preview;
+
 end;
 
 end.

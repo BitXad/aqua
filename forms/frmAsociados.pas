@@ -812,7 +812,7 @@ end;
 
 procedure TFormAsociados.SpeedButton7Click(Sender: TObject);
 begin
-        FormRepCertificado.QuickRep1.Preview;
+        FormRepCertificado.mostrar;
 end;
 
 end.

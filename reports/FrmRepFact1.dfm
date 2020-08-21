@@ -1,6 +1,6 @@
 object FormRepfact1: TFormRepfact1
-  Left = 357
-  Top = 94
+  Left = 177
+  Top = 339
   Width = 882
   Height = 614
   Caption = 'Factura Media Carta'
@@ -81,7 +81,7 @@ object FormRepfact1: TFormRepfact1
       ForceNewPage = False
       ParentFont = False
       Size.Values = (
-        304.3
+        304.270833333333
         1949.97916666667)
       BandType = rbPageFooter
       object QRExpr13: TQRExpr
